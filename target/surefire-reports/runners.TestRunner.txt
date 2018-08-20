@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 63.839 sec <<< FAILURE!
+And enter "Lakshay" Personal details on checkoutpage(| Lakshay |)  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.RuntimeException: Test Data Resouce path not specified in config file
+	at dataProvider.ConfigFileReader.getTestDataResourcePath(ConfigFileReader.java:120)
+	at dataProvider.JsonDataReader.<init>(JsonDataReader.java:17)
+	at managers.FileReaderManager.getJsonReader(FileReaderManager.java:31)
+	at stepDefinitions.CheckoutPageSteps.enter_Personal_details_on_checkoutpage(CheckoutPageSteps.java:29)
+	at ?.And enter "Lakshay" Personal details on checkoutpage(End2endTests.feature:9)
+
+| Lakshay |  Time elapsed: 0.004 sec  <<< ERROR!
+java.lang.RuntimeException: Test Data Resouce path not specified in config file
+	at dataProvider.ConfigFileReader.getTestDataResourcePath(ConfigFileReader.java:120)
+	at dataProvider.JsonDataReader.<init>(JsonDataReader.java:17)
+	at managers.FileReaderManager.getJsonReader(FileReaderManager.java:31)
+	at stepDefinitions.CheckoutPageSteps.enter_Personal_details_on_checkoutpage(CheckoutPageSteps.java:29)
+	at ?.And enter "Lakshay" Personal details on checkoutpage(End2endTests.feature:9)
+

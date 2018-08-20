@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3568355354,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Customer placing an order to purchase",
+        "description": "",
+        "id": "automate-e2e-tests;customer-placing-an-order-to-purchase;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 449858452,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 649296915,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23244853573,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on home page",
+            "match": {
+              "location": "HomePageSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9878948436,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "he searches for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dress",
+                  "offset": 17
+                }
+              ],
+              "location": "HomePageSteps.he_searches_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5603893649,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "choose to buy first item",
+            "match": {
+              "location": "ProductListingPageSteps.choose_to_buy_first_item()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19018030653,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "moves to checkout from minicart",
+            "match": {
+              "location": "CartPageSteps.moves_to_checkout_from_minicart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 42145205,
+              "error_message": "java.lang.RuntimeException: Test Data Resouce path not specified in config file\r\n\tat dataProvider.ConfigFileReader.getTestDataResourcePath(ConfigFileReader.java:120)\r\n\tat dataProvider.JsonDataReader.\u003cinit\u003e(JsonDataReader.java:17)\r\n\tat managers.FileReaderManager.getJsonReader(FileReaderManager.java:31)\r\n\tat stepDefinitions.CheckoutPageSteps.enter_Personal_details_on_checkoutpage(CheckoutPageSteps.java:29)\r\n\tat ✽.And enter \"Lakshay\" Personal details on checkoutpage(End2endTests.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "enter \"Lakshay\" Personal details on checkoutpage",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lakshay",
+                  "offset": 7
+                }
+              ],
+              "location": "CheckoutPageSteps.enter_Personal_details_on_checkoutpage(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "select same delivery address",
+            "match": {
+              "location": "CheckoutPageSteps.select_same_delivery_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "select payment method as \"CheckPayment\" payment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "CheckPayment",
+                  "offset": 26
+                }
+              ],
+              "location": "CheckoutPageSteps.select_payment_method_as_payment(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "place the order",
+            "match": {
+              "location": "CheckoutPageSteps.place_the_order()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Automate E2E tests",
+    "description": "Description: To Test E2E Scenarios",
+    "id": "automate-e2e-tests",
+    "keyword": "Feature",
+    "uri": "End2endTests.feature"
+  }
+]

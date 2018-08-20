@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="62.455382">
+<testcase classname="Automate E2E tests" name="Customer placing an order to purchase" time="62.455382">
+<failure message="java.lang.RuntimeException: Test Data Resouce path not specified in config file&#13;&#10;&#9;at dataProvider.ConfigFileReader.getTestDataResourcePath(ConfigFileReader.java:120)&#13;&#10;&#9;at dataProvider.JsonDataReader.&lt;init&gt;(JsonDataReader.java:17)&#13;&#10;&#9;at managers.FileReaderManager.getJsonReader(FileReaderManager.java:31)&#13;&#10;&#9;at stepDefinitions.CheckoutPageSteps.enter_Personal_details_on_checkoutpage(CheckoutPageSteps.java:29)&#13;&#10;&#9;at ✽.And enter &quot;Lakshay&quot; Personal details on checkoutpage(End2endTests.feature:9)&#13;&#10;"><![CDATA[Given user is on home page..................................................passed
+When he searches for "dress"................................................passed
+And choose to buy first item................................................passed
+And moves to checkout from minicart.........................................passed
+And enter "Lakshay" Personal details on checkoutpage........................failed
+And select same delivery address............................................skipped
+And select payment method as "CheckPayment" payment.........................skipped
+And place the order.........................................................skipped
+
+StackTrace:
+java.lang.RuntimeException: Test Data Resouce path not specified in config file
+	at dataProvider.ConfigFileReader.getTestDataResourcePath(ConfigFileReader.java:120)
+	at dataProvider.JsonDataReader.<init>(JsonDataReader.java:17)
+	at managers.FileReaderManager.getJsonReader(FileReaderManager.java:31)
+	at stepDefinitions.CheckoutPageSteps.enter_Personal_details_on_checkoutpage(CheckoutPageSteps.java:29)
+	at ✽.And enter "Lakshay" Personal details on checkoutpage(End2endTests.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
